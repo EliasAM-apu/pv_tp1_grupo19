@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Gestión Educativa</title>
+    <meta name="description" content="Dashboard principal de la plataforma de Gestión de Proyectos Educativos">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* CSS Interno añadido */
+        .stat-card {
+            background-color: var(--bg-white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body class="dashboard-layout">
+    <header class="main-header">
+        <div class="logo">Gestión Educativa</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <h3>Herramientas Rápidas</h3>
+        <ul>
+            <li><a href="#">Nuevo Proyecto</a></li>
+            <li><a href="#">Mensajes</a></li>
+            <li><a href="#">Ajustes</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard-main">
+        <section class="welcome-section">
+            <h1 style="color: var(--primary-color);">Bienvenido, Juan</h1>
+            <p>Plataforma de Gestión de Proyectos Educativos</p>
+        </section>
+
+        <section class="stats-section">
+            <h2>Estadísticas Generales</h2>
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <h3>Proyectos Totales</h3>
+                    <p class="stat-number">12</p>
+                </article>
+                <article class="stat-card">
+                    <h3>Tareas para Hoy</h3>
+                    <p class="stat-number">5</p>
+                </article>
+                <article class="stat-card">
+                    <h3>Mensajes Pendientes</h3>
+                    <p class="stat-number">3</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <h2>Novedades Recientes</h2>
+            <ul class="news-list">
+                <li><strong>Lucía</strong> subió un nuevo documento: <em>Manual de JS</em>.</li>
+                <li>Se acaba de crear el proyecto <strong>Desarrollo Web</strong>.</li>
+                <li><strong>Carlos Santillán</strong> ha finalizado la tarea <em>Diseño de base de datos</em>.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Gestión Educativa - Grupo 19. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
