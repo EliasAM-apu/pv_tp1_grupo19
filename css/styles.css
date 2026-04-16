@@ -201,3 +201,35 @@ ul {
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
+
+
+.detail-main {
+    grid-area: main;
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.project-detail {
+    background-color: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.detail-meta {
+    margin-top: 0.5rem;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 2rem;
+}
+
+.detail-description h2, .detail-resources h2, .detail-team h2 {
+    margin: 2rem 0 1rem 0;
+    color: var(--primary-color);
+}
+
+.resources-list li {
+    margin-bottom: 0.5rem;
+}
