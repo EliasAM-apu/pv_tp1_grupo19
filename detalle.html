@@ -1,0 +1,112 @@
+detalle.html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Proyecto - Gestión Educativa</title>
+    <meta name="description" content="Información detallada sobre un proyecto específico">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* CSS Interno añadido */
+        .detail-header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .team-table th, .team-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .team-table th {
+            background-color: var(--bg-light);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="general-layout">
+    <header class="main-header">
+        <div class="logo">Gestión Educativa</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="detail-main">
+        <article class="project-detail">
+            <header class="detail-header">
+                <h1>Portal de Alumnos</h1>
+                <div class="detail-meta">
+                    <span><strong>Fecha de inicio:</strong> 10 de Marzo de 2026</span>
+                    <span><strong>Autores:</strong> Juan Perez</span>
+                </div>
+            </header>
+
+            <section class="detail-description">
+                <h2 style="text-decoration: underline; text-decoration-color: var(--secondary-color);">Objetivos del Proyecto</h2>
+                <p>El propósito principal de este proyecto es modernizar la interacción entre los estudiantes y el
+                    sistema administrativo de la institución. Se busca desarrollar una plataforma robusta donde los
+                    alumnos puedan revisar sus asistencias, calificaciones, cronogramas de exámenes y material de
+                    estudio en tiempo real, todo desde una interfaz unificada y de fácil uso.</p>
+                <p>Además, el sistema está diseñado con una arquitectura escalable que permitirá la integración de
+                    herramientas como foros de discusión y gestión de pagos en futuras etapas del ciclo lectivo. El
+                    código prioriza el buen rendimiento y el acceso móvil para garantizar que la comunidad educativa
+                    tenga información precisa y siempre al alcance.</p>
+            </section>
+
+            <section class="detail-resources">
+                <h2>Recursos Asociados</h2>
+                <ul class="resources-list">
+                    <li><a href="#">Requerimientos del Sistema (PDF)</a></li>
+                    <li><a href="#">Carpeta de Archivos en Google Drive</a></li>
+                    <li><a href="#">Repositorio en GitHub</a></li>
+                    <li><a href="#">Diseños UI/UX en Figma</a></li>
+                </ul>
+            </section>
+
+            <section class="detail-team">
+                <h2>Equipo de Trabajo</h2>
+                <table class="team-table">
+                    <thead>
+                        <tr>
+                            <th>Integrante</th>
+                            <th>Rol en el Proyecto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Perez</td>
+                            <td>Project Manager / Frontend Developer</td>
+                        </tr>
+                        <tr>
+                            <td>Ana Gómez</td>
+                            <td>UI/UX Designer</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Santillán</td>
+                            <td>Backend Developer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Gestión Educativa - Grupo 19. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
