@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Gestión Educativa</title>
+    <meta name="description" content="Explorador de proyectos de la plataforma educativa">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* CSS Interno añadido */
+        .filters-sidebar {
+            background-color: var(--bg-white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            height: fit-content;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+            margin-top: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="general-layout">
+    <header class="main-header">
+        <div class="logo">Gestión Educativa</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="proyectos.html" class="active">Proyectos</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-main">
+        <aside class="filters-sidebar">
+            <form action="#" class="filters-form">
+                <h2>Filtros</h2>
+                <div class="form-group">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="todas">Todas</option>
+                        <option value="ciencias">Ciencias</option>
+                        <option value="programacion">Programación</option>
+                        <option value="arte">Arte</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="todos">Todos</option>
+                        <option value="en-curso">En Curso</option>
+                        <option value="finalizado">Finalizado</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Aplicar Filtros</button>
+            </form>
+        </aside>
+
+        <section class="projects-list">
+            <h1 style="border-bottom: 2px solid var(--primary-color); display: inline-block;">Explorador de Proyectos</h1>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Código en pantalla">
+                    <div class="card-content">
+                        <span class="badge in-progress">En Curso</span>
+                        <span class="category-tag">Programación</span>
+                        <h2>Portal de Alumnos</h2>
+                        <p>Desarrollo de una plataforma para que los alumnos revisen sus asistencias y notas utilizando React y Node.js.</p>
+                        <a href="detalle.html" class="btn-secondary">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=400&q=80" alt="Pizarrón con fórmulas">
+                    <div class="card-content">
+                        <span class="badge finished">Finalizado</span>
+                        <span class="category-tag">Ciencias</span>
+                        <h2>Investigación Cuántica</h2>
+                        <p>Análisis de las teorías fundamentales de la física cuántica aplicada a la computación moderna e inteligencia artificial.</p>
+                        <a href="detalle.html" class="btn-secondary">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=400&q=80" alt="Materiales de Arte">
+                    <div class="card-content">
+                        <span class="badge in-progress">En Curso</span>
+                        <span class="category-tag">Arte</span>
+                        <h2>Mural Institucional</h2>
+                        <p>Diseño y pintura colaborativa de un mural representativo en la pared principal de la facultad de artes.</p>
+                        <a href="detalle.html" class="btn-secondary">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="Robótica">
+                    <div class="card-content">
+                        <span class="badge in-progress">En Curso</span>
+                        <span class="category-tag">Robótica</span>
+                        <h2>Brazo Mecánico</h2>
+                        <p>Construcción de un brazo robótico controlado por Arduino para asistir en laboratorios de química industrial.</p>
+                        <a href="detalle.html" class="btn-secondary">Ver detalle</a>
+                    </div>
+                </article>
+
+                <!-- Proyecto 5 -->
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80" alt="Gráficos financieros">
+                    <div class="card-content">
+                        <span class="badge finished">Finalizado</span>
+                        <span class="category-tag">Negocios</span>
+                        <h2>Simulador de Mercado</h2>
+                        <p>Aplicación orientada a simular inversiones en la bolsa para la clase de Microeconomía Avanzada.</p>
+                        <a href="detalle.html" class="btn-secondary">Ver detalle</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Gestión Educativa - Grupo 19. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
