@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario - Gestión Educativa</title>
+    <meta name="description" content="Perfil de usuario de la plataforma educativa">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* CSS Interno añadido */
+        .profile-card {
+            background-color: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--bg-light);
+            margin-bottom: 1rem;
+        }
+        .role-badge.student {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body class="general-layout">
+    <header class="main-header">
+        <div class="logo">Gestión Educativa</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="perfil.html" class="active">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-main">
+        <section class="profile-card">
+            <div class="profile-header">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80" alt="Fotografía de perfil de Juan Perez" class="profile-avatar">
+                <div class="profile-title">
+                    <h1>Juan Perez</h1>
+                    <span class="role-badge student">Alumno</span>
+                </div>
+            </div>
+            
+            <div class="profile-info">
+                <h2>Información Personal</h2>
+                <ul class="info-list">
+                    <li><strong>Correo Institucional:</strong> juan.perez@instituto.edu.ar</li>
+                    <li><strong>Legajo:</strong> AL-982441</li>
+                    <li><strong>Carrera:</strong> Licenciatura en Sistemas Web</li>
+                    <li><strong>Fecha de Ingreso:</strong> Marzo 2024</li>
+                </ul>
+            </div>
+
+            <div class="profile-actions">
+                <button class="btn-primary" style="font-weight: 700; letter-spacing: 1px;">Editar Perfil</button
+                <button class="btn-secondary">Cambiar Contraseña</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Gestión Educativa - Grupo 19. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
